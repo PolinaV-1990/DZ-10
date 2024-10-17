@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FilmManagerTest {
 
     @Test
-    public void notAdd(){
+    public void notAdd() {
         FilmManager manager = new FilmManager();
 
         String[] expected = {};
@@ -18,7 +18,7 @@ class FilmManagerTest {
     }
 
     @Test
-    public void minAdd(){
+    public void minAdd() {
         FilmManager manager = new FilmManager();
 
         manager.addFilm("Бладшот");
@@ -30,7 +30,7 @@ class FilmManagerTest {
     }
 
     @Test
-    public void boundaryValue(){
+    public void boundaryValue() {
         FilmManager manager = new FilmManager();
 
         manager.addFilm("Бладшот");
@@ -43,7 +43,7 @@ class FilmManagerTest {
     }
 
     @Test
-    public void borderFindLast(){
+    public void borderFindLast() {
         FilmManager manager = new FilmManager();
 
         manager.addFilm("Бладшот");
@@ -58,7 +58,7 @@ class FilmManagerTest {
     }
 
     @Test
-    public void maxLimit(){
+    public void maxLimit() {
         FilmManager manager = new FilmManager();
 
         manager.addFilm("Бладшот");
