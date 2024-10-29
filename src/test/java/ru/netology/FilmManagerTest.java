@@ -72,4 +72,22 @@ class FilmManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void moreThanLimit() {
+        FilmManager manager = new FilmManager();
+
+        manager.addFilm("Бладшот");
+        manager.addFilm("Вперед");
+        manager.addFilm("Джентельмены");
+        manager.addFilm("Человек-невидимка");
+        manager.addFilm("Номер один");
+        manager.addFilm("Отель");
+
+
+        String[] expected = {"Отель", "Номер один", "Человек-невидимка", "Джентельмены", "Вперед"};
+        String[] actual = manager.findLast();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }
